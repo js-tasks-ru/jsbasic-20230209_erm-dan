@@ -33,6 +33,7 @@ describe('5-module-2-task', () => {
     let clickEvent = new MouseEvent('click', { bubbles: true });
     buttonElement.dispatchEvent(clickEvent);
     buttonElement.dispatchEvent(clickEvent);
+    
 
     expect(textElement.hidden).toBeFalsy();
   });

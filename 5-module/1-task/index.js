@@ -1,3 +1,5 @@
 function hideSelf() {
-  // ваш код...
+  let res1 = document.getElementsByClassName("hide-self-button");
+  res1[0].hidden = true;
+  
 }
