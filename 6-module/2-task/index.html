@@ -17,13 +17,12 @@
 
     let card = new ProductCard({
       name: "Laab kai chicken salad",
-      price: 10,
+      price: 10,  //Number(10).toFixed(2),
       category: "salads",
       image: "laab_kai_chicken_salad.png",
       id: "laab-kai-chicken-salad"
     });
-
-    holder.append(card.elem);
+    document.body.append(card.elem);
   </script>
 </body>
 
