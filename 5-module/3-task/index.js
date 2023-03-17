@@ -1,4 +1,5 @@
-function initCarousel() {
+
+   function initCarousel() {
   let arrowLeft = document.querySelector('.carousel__arrow_left');
   let arrowRight = document.querySelector('.carousel__arrow_right');
   let width = document.querySelector('.carousel__inner');
