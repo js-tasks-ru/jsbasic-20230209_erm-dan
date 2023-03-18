@@ -5,12 +5,12 @@ export default class Carousel {
   constructor(slides) {
     this.slides = slides;
     this.position = 0;
-    this.render();
+    this.createTableHTML();
     this.addEventListeners();
     // this.initCarousel();
     
   }
-  render() {
+  createTableHTML() {
     this.elem = createElement(`
         <div class="carousel">
           <div class="carousel__arrow carousel__arrow_right">
@@ -19,7 +19,7 @@ export default class Carousel {
         <div class="carousel__arrow carousel__arrow_left">
           <img src="/assets/images/icons/angle-left-icon.svg" alt="icon" />
         </div>
-      <div class="carousel__inner></div>
+      <div class="carousel__inner"></div>
     </div>
     `);
 
@@ -42,7 +42,7 @@ export default class Carousel {
 
     this.sub(`inner`).append(...slides);
     // this.elem.innerHTML = slides;
-    // this.elem.append(...slides);
+    // this.elem.appendChild(slides);
     
     this.update();
   }
@@ -139,6 +139,8 @@ export default class Carousel {
   //     this.elem.dispatchEvent(customEV);
   //   }
   // }
+
+
 
   
 }
