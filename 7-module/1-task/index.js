@@ -3,7 +3,6 @@ import createElement from '../../assets/lib/create-element.js';
 export default class RibbonMenu {
   constructor(categories) {
     this.categories = categories;
-    console.log(categories.length)
     // this.elem = document.createElement('div');
     this.render();
     this.handleClick();
@@ -147,12 +146,12 @@ export default class RibbonMenu {
     let btnRight = document.getElementById('btnRight'); // левая
     let btnLeft = document.getElementById('btnLeft'); // правая
     let oblojka = this.sub('inner');
-    console.log(btnLeft);
+
     let scrscrLeft = oblojka.scrollLeft;
     let scrollWidthh = oblojka.scrollWidth;
     let clientWidthh = oblojka.clientWidth;
     let scrollRight = scrollWidthh - scrscrLeft - clientWidthh;
-    console.log(scrollRight);
+
 
     if (scrscrLeft == 0) {
       btnLeft.classList.remove('ribbon__arrow_visible');
@@ -172,4 +171,4 @@ export default class RibbonMenu {
 
   
   }
- 
+
